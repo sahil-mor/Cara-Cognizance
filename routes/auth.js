@@ -14,7 +14,6 @@ var middleware = require("../middleware")
 router.post("/login",passport.authenticate("local",{
     failureRedirect : "/wrongCredentials"
 }),middleware.isLoggedIn, (req,res) => {
-    req.flash("success",`Welcome Back, ${req.user.username} ` )
     res.redirect("/index")
 })
 

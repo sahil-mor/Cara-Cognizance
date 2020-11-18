@@ -18,7 +18,6 @@ router.get("/",(req,res) => {
 router.post("/login",passport.authenticate("local",{
     failureRedirect : "/wrongCredentials"
 }),middleware.isLoggedIn,function(req,res){
-    req.flash("success",`Welcome Back, ${req.user.username} ` )
     res.redirect("/authorised/index")
 })
 
