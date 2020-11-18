@@ -61,12 +61,12 @@ const addMemberFunc = async (req,res) => {
                 req.flash("success","Data Updated Successfully !!!")
                 res.redirect("/index")
             }else{
-                const { name  , address, phoneNumber , dateOfBirth } = req.body
+                const { name  , address, phoneNumber , dateOfBirth, email } = req.body
                 userItem.name = name
                 userItem.address = address
                 userItem.phoneNumber = phoneNumber
                 userItem.dateOfBirth = dateOfBirth
-
+                userItem.email = email
                 const imageLink = await ImageLink.findById(userItem.imageLink)
                 
                 imageLink.name = name
