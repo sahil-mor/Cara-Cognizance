@@ -1,5 +1,6 @@
 const imageUpload = document.getElementById('imageUpload')
-
+$("#imageUpload").hide()
+$("#canUpload").hide()
 Promise.all([
   faceapi.nets.faceRecognitionNet.loadFromUri('/models'),
   faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
@@ -17,7 +18,9 @@ async function start() {
   let image
   let canvas
   document.body.append('Loaded')
-
+  $("#imageUpload").show()
+  $("#pleaseWait").hide()
+  $("#canUpload").show()
   imageUpload.addEventListener('change', async () => {
     if (image) image.remove()
     if (canvas) canvas.remove()
