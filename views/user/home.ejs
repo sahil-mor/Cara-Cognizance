@@ -3,14 +3,16 @@
 <div class="wrapper">
   <%- include('../partials/header') %> 
   
+  <section class="mainsite" id="mainsite">
   <%- include('../partials/sidenav') %> 
- 
-  <div class="content-wrapper">
-   
+  <section class="mainpage" id="mainpage">
+	<div class="burger" id="burger">
+		<div class="burger-menu"></div>
+	</div>
+  <div style="height: 100vh;background: #f1f2f7;">
     <section class="content">
       	<div class="row fx-element-overlay">
 			<div class="col-12"> 
-				
 				<h4 class="box-title mt-15">Family Members</h4>
 			</div>
 			<div class="col-md-12 col-lg-3">
@@ -49,24 +51,20 @@
 								</div>
 							</div>
 					</div>
-				<!-- /.box -->
 				</div>	
 			<% } ) %>
        	</div>
-     
-
-    </section>
+	</section>
   </div>
  
-   <footer class="main-footer">
-    <div class="pull-right d-none d-sm-inline-block">
-      
-    </div> &copy; 2020 <a href="#">Cara Cognizance</a>. 
-  </footer>
-  <div class="control-sidebar-bg"></div>
+</section>
+
+</section>
+   
 </div>
 	
   <%- include('../partials/footer') %> 
+  
 </body>
 
 </html>

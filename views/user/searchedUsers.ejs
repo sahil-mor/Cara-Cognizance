@@ -4,9 +4,13 @@
 <div class="wrapper">
   <%- include('../partials/header') %> 
   
-  <%- include('../partials/sidenav') %> 
-
-  <div class="content-wrapper">
+  <section class="mainsite" id="mainsite">
+	<%- include('../partials/sidenav') %> 
+	<section class="mainpage" id="mainpage">
+	  <div class="burger" id="burger">
+		  <div class="burger-menu"></div>
+	  </div>
+	<div style="height: 100vh;background: #f1f2f7;">
     <section class="content-header">
       <h1>
         Searched Users
@@ -14,7 +18,6 @@
     </section>
 
     <section class="content">
-		
 		<div class="row">
 			<% userItem.views.forEach( eachOne => { %> 
 				<% var date1 = eachOne.date; %> 
@@ -49,24 +52,17 @@
 										</div>
 									</p>
 								</div>
-
-							
 							</div>
-
 						</div>
 					</div>			
-				</div>	
+				</div>
 			<% } ) %>
 		</div>
     </section>
   </div>
- 
-  <footer class="main-footer">
-    <div class="pull-right d-none d-sm-inline-block">
-      
-    </div> &copy; 2020 <a href="#">Cara Cognizance</a>. 
-  </footer>
-  <div class="control-sidebar-bg"></div>
+  </section>
+  </section>
+  
 </div>
 	
 <%- include('../partials/footer') %> 

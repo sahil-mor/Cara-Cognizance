@@ -35,7 +35,7 @@ const addMemberFunc = async (req,res) => {
             if(req.file){
                 if( user.image.cloudinary_id != "ppupkcvzznejm0c6tylm" ){
                     console.log("i m here")
-                    await cloudinary.uploader.destroy(user.image.cloudinary_id);
+                    var deleted = await cloudinary.uploader.destroy(user.image.cloudinary_id);
                 }
                 const result = await cloudinary.uploader.upload(req.file.path);
                 const imageUrl = result.secure_url

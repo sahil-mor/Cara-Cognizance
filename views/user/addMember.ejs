@@ -3,53 +3,54 @@
     <div class="wrapper">
       <%- include('../partials/header') %> 
       
-      <%- include('../partials/sidenav') %> 
-    
-      <div class="content-wrapper">
-        <section class="content-header">
-          <h1> Add Family Member   </h1>
-        </section>
+      <section class="mainsite" id="mainsite">
+        <%- include('../partials/sidenav') %> 
+        <section class="mainpage" id="mainpage">
+        <div class="burger" id="burger">
+          <div class="burger-menu"></div>
+        </div>
+        <div style="height: 100vh;background: #f1f2f7;">
+          <section class="content-header">
+            <h1> Add Family Member   </h1>
+          </section>
 
-        <section class="content">
-          <div class="row">
-            <div class="col-12">     
-              <div class="box box-default">
-                <div class="box-body">
-                  <form enctype="multipart/form-data" action="/addMember" method="POST" >						
-                    <div id="example-basic">
-                      <h3>Add Info</h3>
-                      <section>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <div class="from-group">
-                              <label>Select Image</label>
-                              <input type="file" required name="uri" accept="image/x-png,image/gif,image/jpeg" class="form-group form-control">
+          <section class="content">
+            <div class="row">
+              <div class="col-12">     
+                <div class="box box-default">
+                  <div class="box-body">
+                    <form enctype="multipart/form-data" action="/addMember" method="POST" >						
+                      <div id="example-basic">
+                        <h3>Add Info</h3>
+                        <section>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="from-group">
+                                <label>Select Image</label>
+                                <input type="file" required name="uri" accept="image/x-png,image/gif,image/jpeg" class="form-group form-control">
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <button type="submit" class="form-group btn btn-dark">Submit</button>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <button type="submit" class="form-group btn btn-dark">Submit</button>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      </section>
-                    </div>
-                  </form>
+                        </section>
+                      </div>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          
-        </section>
-      </div>
+            
+          </section>
+        </div>
       
-      <footer class="main-footer">
-        <div class="pull-right d-none d-sm-inline-block"> </div> 
-        &copy; 2020 <a href="#">Cara Cognizance</a>. 
-      </footer>
-      <div class="control-sidebar-bg"></div>
+      </section>
+    </section>
     </div>
   <%- include('../partials/footer') %> 
   </body>

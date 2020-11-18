@@ -1,3 +1,4 @@
+
 <!-- jQuery 3 -->
 <script src="../../../assets/vendor_components/jquery-3.3.1/jquery-3.3.1.min.js"></script>
 	
@@ -18,12 +19,21 @@
 
 <script src="../../js/template.js"></script>
 <script type="text/javascript">
-$(function() {
-  // Sidebar toggle behavior
-  $('#sidebarCollapse').on('click', function() {
-    $('#sidebar, #content').toggleClass('active');
-  });
+
+const burgerMenu = document.getElementById("burger");
+const mainSite = document.getElementById("mainsite");
+
+// Sidebar Menu Toggle
+burgerMenu.addEventListener("click", () => {
+	if (mainSite.classList.contains("active")) {
+		burgerMenu.classList.remove("active");
+		mainSite.classList.remove("active");
+	} else {
+		burgerMenu.classList.add("active");
+		mainSite.classList.add("active");
+	}
 });
+
 $(document).ready(function($) {
     // delegate calls to data-toggle="lightbox"
     $(document).delegate('*[data-toggle="lightbox"]:not([data-gallery="navigateTo"])', 'click', function(event) {
