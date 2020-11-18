@@ -1,0 +1,95 @@
+<%- include('./partials/loaders') %> 
+
+<style>
+  .loader {
+    border: 6px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 6px solid #1c0301;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    margin: auto;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  </style>
+
+<script defer src="/face-api.min.js"></script>
+<script defer src="/script.js"></script>
+
+<body class="hold-transition skin-purple light-sidebar sidebar-mini">
+<!-- Site wrapper -->
+<div class="wrapper">
+  <%- include('./partials/header') %> 
+  
+  <!-- Left side column. contains the sidebar -->
+  <%- include('./partials/sidenav') %> 
+</head>
+<body>
+    <div class="content-wrapper">
+    <section class="content">
+        <div class="row fx-element-overlay">
+          <div class="col-md-12 col-lg-4">
+              <div class="box overflow-hidden">
+                      <div class="fx-card-item">
+                          <div class="fx-card-avatar fx-overlay-1" style="display: flex;flex-direction: column;" > 
+                            <div id="imageHere">
+                            </div>
+                          </div>
+                      </div>
+
+                      <div style="margin: 5%;margin-left: 20%;">
+                        <input type="file" id="imageUpload">
+                      </div>
+              </div>
+          </div>
+          <div class="col-md-12 col-lg-6">
+            <div class="box overflow-hidden">
+              <div class="fx-card-item">
+                <div class="fx-card-avatar fx-overlay-1"> 
+                  <h1 class="box-title" id="heading"> Your result will come here </h1>
+                  <div id="addLoader"></div>
+                  <div id="linksHere" style="display: flex;flex-direction: column;">
+                                        
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>   
+
+  </section>
+  </div>
+  
+       
+    <footer class="main-footer">
+      <div class="pull-right d-none d-sm-inline-block">
+        
+      </div> &copy; 2020 <a href="#">Cara Cognizance</a>. 
+    </footer>
+  
+    <!-- Add the sidebar's background. This div must be placed immediately after the control sidebar -->
+    <div class="control-sidebar-bg"></div>
+  </div>
+  <!-- ./wrapper -->
+      
+  <%- include('./partials/footer') %> 
+  <% if(imagesLinks){%> 
+    <script>
+        var links = <%- JSON.stringify(imagesLinks) %> 
+     </script>
+<%} %>
+  </body>
+  
+  </html>
+  

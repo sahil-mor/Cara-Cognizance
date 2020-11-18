@@ -1,0 +1,29 @@
+<header class="main-header">	
+    <div class="p-10 clearfix float-left">
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+          <i class="ti-align-left"></i>
+      </a>
+      <a href="#!" class="logo">
+        <span class="logo-lg">
+            <h3 style="color: black;"> Cara Cognizance </h3>
+        </span>
+      </a>	  
+    </div>
+  
+</header>
+<br>
+  <div class="text-centre col-12">
+    <div class="text-center">
+      <% if(error && error.length > 0){ %>
+      <div class="alert alert-danger">
+        <%= error %> 
+      </div>
+      <% } %>
+    
+      <% if(success && success.length > 0){ %>
+      <div class="alert alert-success">
+        <%= success %>
+      </div>
+      <% } %>
+    </div>
+    </div>

@@ -1,0 +1,65 @@
+<aside class="main-sidebar">
+    <!-- sidebar-->
+    <section class="sidebar">
+		
+      <ul class="sidebar-menu" data-widget="tree">
+        <li class="">
+          <a href="/index">
+            <i class="fa fa-laptop"></i>
+            <span> <%= user.username %> </span>
+			      <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>	
+        </li>
+        <% if(!user.isAuthorised){ %> 
+          <li class="">
+            <a href="/editMember-<%=user.userItem%>">
+              <i class="fa fa-pencil"></i>
+              <span>Edit Profile</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-right pull-right"></i>
+              </span>
+            </a>
+          </li>
+          <li class="">
+            <a href="/addMember">
+              <i class="fa fa-plus-circle"></i>
+              <span>Add Member</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-right pull-right"></i>
+              </span>
+            </a>
+          </li>
+          <li class="">
+            <a href="/searchedUsers">
+              <i class="fa fa-eye" aria-hidden="true"></i>
+              <span>Searched Users</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-right pull-right"></i>
+              </span>
+            </a>
+          </li>
+          <li class="">
+            <a href="/searchItem">
+              <i class="fa fa-search" aria-hidden="true"></i>
+              <span>Search</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-right pull-right"></i>
+              </span>
+            </a>
+          </li>
+        <% } %>
+		    <li class="">
+          <a href="/logout">
+            <i class="fa fa-sign-out"></i>
+            <span>Logout</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+        </li>       
+        
+      </ul>
+    </section>
+  </aside>

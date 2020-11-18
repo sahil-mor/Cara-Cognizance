@@ -1,0 +1,85 @@
+<%- include('./partials/loaders') %> 
+<body class="hold-transition skin-purple light-sidebar sidebar-mini">
+
+<div class="wrapper">
+  <%- include('./partials/header') %> 
+  
+  <%- include('./partials/sidenav') %> 
+
+  <div class="content-wrapper">
+    <section class="content">
+      <div class="row fx-element-overlay">
+        <div class="row">
+          <div class="col-md-12 col-lg-4">
+            <div class="box overflow-hidden">
+                <div class="fx-card-item">
+                  <div class="fx-card-avatar fx-overlay-1"> <img src="<%=userItem.image.imageUrl%>" alt="user">
+                    <div class="fx-overlay scrl-dwn">
+                      <% if(canEdit){ %> 
+                        <ul class="fx-info">
+                          <li><a class="btn default btn-outline image-popup-vertical-fit" href="/editMember-<%=userItem.id%>"> <i class="fa fa-pencil"></i></a></li>
+                        </ul>
+                      <% } %>
+                    </div>
+                  </div>
+                  <% if(!canEdit){ %> 
+                    <div class="fx-card-content">
+                      <h3 class="box-title"> <%= userItem.name %> </h3>
+                    </div>
+                  <% } %>
+                </div>
+            </div>
+          </div>
+          <% if( canEdit || isAuthorised ){ %> 
+            <div class="col-md-12 col-lg-6">
+              <!-- interactive chart -->
+              <div class="box">
+                <div class="box-header with-border">
+                  <h3 class="box-title">  
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i> 
+                    <% if(userItem.name){%> 
+                      <%= userItem.name %> 
+                    <%}else{ %> 
+                      <%= userItem.username %> 
+                    <% } %>
+                  </h3>
+                </div>
+                <div class="box-body">
+                  <a href="/viewItem-<%=userItem.parent.userItem%>" target="_blank" >
+                    <h4 class="form-group"> <i class="fa fa-child" aria-hidden="true"></i> <%= userItem.parent.username %> </h4>
+                  </a>
+                  <h4 class="form-group"> <i class="fa fa-envelope" aria-hidden="true"></i> <%= userItem.email %> </h4>
+                  <h4 class="form-group"> 
+                    <i class="fa fa-calendar" aria-hidden="true"></i> 
+                    <% if(userItem.dateOfBirth){%> 
+                      <%= userItem.dateOfBirth.toDateString() %> 
+                    <%}else{ %> 
+                     
+                    <% } %>
+                  </h4>
+                  <h4 class="form-group"> <i class="fa fa-mobile" aria-hidden="true"></i> <%= userItem.phoneNumber %> </h4>
+                  <h4 class="form-group"> <i class="fa fa-map-marker" aria-hidden="true"></i> <%= userItem.address %> </h4>
+                </div>
+              </div>
+          </div>
+          <% } %>
+        </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  
+  <footer class="main-footer">
+    <div class="pull-right d-none d-sm-inline-block">
+      
+    </div> &copy; 2020 <a href="#">Cara Cognizance</a>. 
+  </footer>
+
+  <div class="control-sidebar-bg"></div>
+</div>
+	
+<%- include('./partials/footer') %> 
+</body>
+
+</html>

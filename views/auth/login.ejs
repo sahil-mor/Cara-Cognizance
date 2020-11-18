@@ -1,0 +1,68 @@
+<%- include('../partials/loaders') %> 
+<body class="hold-transition login-page" style="background-image: url(/images/background.jpg); background-position: center;
+background-repeat: no-repeat;
+background-size: cover;">
+	
+	<div class="container h-p100">
+		<div class="row align-items-center justify-content-md-center h-p100">
+			<div class="col-lg-4 col-md-8 col-12">
+				<div class="login-box bg-img rounded" style="background-image:url(/images/img1.jpg);" data-overlay="5">
+				  <div class="login-box-body">
+					<h3 class="text-center">Welcome back to Cara</h3>
+					<p class="login-box-msg">Sign in to start your session</p>
+
+					<form action="/login" method="POST" class="form-element text-white">
+						<div class="form-group has-feedback">
+							<input type="text" class="form-control text-white" required name="username" placeholder="Username">
+							<span class="ion ion-person form-control-feedback text-white"></span>
+						</div>
+					  <div class="form-group has-feedback">
+						<input type="password" required class="form-control text-white" placeholder="Password" name="password">
+						<span class="ion ion-locked form-control-feedback text-white"></span>
+					  </div>
+					  <div class="row">
+						<div class="col-6">
+						  <div class="checkbox">
+						  </div>
+						</div>
+						<div class="col-6">
+						 <div class="fog-pwd text-right">
+							<a href="/forgotPassword" class="text-white"><i class="ion ion-locked"></i> Forgot pwd?</a><br>
+						  </div>
+						</div>
+						<div class="text-centre col-12">
+							<div class="text-center">
+							  <% if(error && error.length > 0){ %>
+								<div class="alert alert-danger">
+									<%= error %> 
+								</div>
+							  <% } %>
+						  
+							  <% if(success && success.length > 0){ %>
+								<div class="alert alert-success">
+									<%= success %>
+								</div>
+							  <% } %>
+							</div>
+						</div>
+						<div class="col-12 text-center">
+						  <button type="submit" class="btn btn-info btn-block margin-top-10">SIGN IN</button>
+						</div>
+					  </div>
+					</form>
+
+					<div class="margin-top-30 text-center">
+						<p>Don't have an account? <a href="/register" class="text-info m-l-5">Sign Up</a></p>
+					</div>
+
+				  </div>
+				</div>
+			
+			</div>
+		</div>
+	</div>
+
+	<%- include('./partials/scripts') %> 
+</body>
+
+</html>

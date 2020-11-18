@@ -1,0 +1,75 @@
+<%- include('../partials/loaders') %> 
+<body class="hold-transition skin-purple light-sidebar sidebar-mini">
+
+<div class="wrapper">
+  <%- include('../partials/header') %> 
+  
+  <%- include('../partials/sidenav') %> 
+
+  <div class="content-wrapper">
+    <section class="content-header">
+      <h1>
+        Searched Users
+      </h1>
+    </section>
+
+    <section class="content">
+		
+		<div class="row">
+			<% userItem.views.forEach( eachOne => { %> 
+				<% var date1 = eachOne.date; %> 
+				<% var date2 = Date.now(); %> 
+				<% var whatToWrite = 'just now' %>
+				<% var Difference_In_Time = date2  - date1 ; %> 
+				<% var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24); %>
+				<% Difference_In_Time_Hours = Difference_In_Time / (1000 * 3600) %>
+				<% Difference_In_Time_Mins = Difference_In_Time / (1000 * 60) %>
+				<% if( parseInt(Difference_In_Days) >= 7 ){ %>
+				  <% whatToWrite = date1.toDateString() %>  
+				<%}else if(Difference_In_Days > 1){ %> 
+				  <% whatToWrite = parseInt(Difference_In_Days) + ' days ago' %>
+				<%}else if( Difference_In_Time_Hours > 1 ){ %> 
+				  <% whatToWrite = parseInt(Difference_In_Time_Hours) + ' hrs ago ' %> 
+				<%}else { %> 
+				  <% whatToWrite = parseInt(Difference_In_Time_Mins) + ' mins ago' %>
+				<%} %>
+				<div class="col-md-6 col-12">
+					<div class="box">
+						<div class="box-body">
+								<div class="media">
+									<span class="avatar">
+										<img class="avatar" src="<%=eachOne.userItem.image.imageUrl%>" alt="...">
+									</span>
+									<div class="media-body">
+									<p class="mt-25" > 
+										<h3 style="display: inline;"> <strong> <%= eachOne.userItem.name %> </strong> </h3> 
+										<time class="float-right" datetime="2017-07-14 20:00"> <%= whatToWrite %> </time> <br>
+										<div class="d-inline-block pull-right ">
+											<a href="/deleteView-<%=eachOne.randomId%>" class="text-white btn btn-danger btn-xs m-5">Delete</a>
+										</div>
+									</p>
+								</div>
+
+							
+							</div>
+
+						</div>
+					</div>			
+				</div>	
+			<% } ) %>
+		</div>
+    </section>
+  </div>
+ 
+  <footer class="main-footer">
+    <div class="pull-right d-none d-sm-inline-block">
+      
+    </div> &copy; 2020 <a href="#">Cara Cognizance</a>. 
+  </footer>
+  <div class="control-sidebar-bg"></div>
+</div>
+	
+<%- include('../partials/footer') %> 
+</body>
+
+</html>

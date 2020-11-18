@@ -1,0 +1,75 @@
+<%- include('../partials/loaders') %> 
+<body class="hold-transition skin-purple light-sidebar sidebar-mini">
+<div class="wrapper">
+  <%- include('../partials/header') %> 
+  
+  <%- include('../partials/sidenav') %> 
+ 
+
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+   
+    <section class="content">
+      	<div class="row fx-element-overlay">
+			<div class="col-12"> 
+				<h4 class="box-title mt-15">Family Members</h4>
+			</div>
+			<div class="col-md-12 col-lg-3">
+				<div class="box overflow-hidden">
+						<div class="fx-card-item">
+							<div class="fx-card-avatar fx-overlay-1"> <img src="<%=user.image.imageUrl%>" alt="user">
+								<div class="fx-overlay scrl-up">
+									<ul class="fx-info">
+										<li><a class="btn default btn-outline image-popup-vertical-fit" href="/editMember-<%=user.userItem%>"> <i class="fa fa-pencil"></i></a></li>
+										<li><a class="btn default btn-outline image-popup-vertical-fit" href="/viewItem-<%=user.userItem%>"> <i class="fa fa-eye" aria-hidden="true"></i> </a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="fx-card-content">
+								<h3 class="box-title"> <%= user.username %> </h3> <small> <%= user.age %> </small> 
+							</div>
+						</div>
+				</div>
+			<!-- /.box -->
+			</div>
+			<% user.familyMembers.forEach( eachMember => { %> 
+				<div class="col-md-12 col-lg-3">
+					<div class="box overflow-hidden">
+							<div class="fx-card-item">
+								<div class="fx-card-avatar fx-overlay-1"> <img src="<%=eachMember.image.imageUrl%>" alt="user">
+									<div class="fx-overlay scrl-up">
+										<ul class="fx-info">
+											<li><a class="btn default btn-outline image-popup-vertical-fit" href="/editMember-<%=eachMember.id%>"> <i class="fa fa-pencil"></i></a></li>
+											<li><a class="btn default btn-outline image-popup-vertical-fit" href="/viewItem-<%=eachMember.id%>"> <i class="fa fa-eye" aria-hidden="true"></i> </a></li>
+											
+										</ul>
+									</div>
+								</div>
+								<div class="fx-card-content">
+									<h3 class="box-title"> <%= eachMember.name %> </h3> <small> <%= user.age %> </small> 
+								</div>
+							</div>
+					</div>
+				<!-- /.box -->
+				</div>	
+			<% } ) %>
+         <!-- /.col -->
+       	</div>
+      <!-- /.row -->
+     
+
+    </section>
+  </div>
+ 
+   <footer class="main-footer">
+    <div class="pull-right d-none d-sm-inline-block">
+      
+    </div> &copy; 2020 <a href="#">Cara Cognizance</a>. 
+  </footer>
+  <div class="control-sidebar-bg"></div>
+</div>
+	
+  <%- include('../partials/footer') %> 
+</body>
+
+</html>
