@@ -18,6 +18,13 @@
 
 <script src="../../js/template.js"></script>
 <script type="text/javascript">
+$(function() {
+  // Sidebar toggle behavior
+  $('#sidebarCollapse').on('click', function() {
+  console.log("function clicked")
+    $('#sidebar, #content').toggleClass('active');
+  });
+});
 $(document).ready(function($) {
     // delegate calls to data-toggle="lightbox"
     $(document).delegate('*[data-toggle="lightbox"]:not([data-gallery="navigateTo"])', 'click', function(event) {

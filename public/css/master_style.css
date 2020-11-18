@@ -1,60 +1,80 @@
-/*------------------------------------------------------------------
-[Master Stylesheet]
 
-Project:	Azurex Admin - Responsive Admin Template
--------------------------------------------------------------------*/
-
-/*------------------------------------------------------------------
-[Table of contents]
-
-1. Body, layout
-2. Header
-3. Sidebar
-4. Form-element and progress bar
-5. Box
-6. User card
-7. tab
-8. google map
-9. wizard
-10. weather
-11. Chat and info-box
-12. timeline
-13. Button
-14. callout
-15. tab
-16. pagination
-17. data table
-18. direct-chat
-19. modal
-20. widget
-21. treevie
-22. mailbox
-23. lockscreen
-24. login-box
-25. social btn
-26. color Skin
-
--------------------------------------------------------------------*/
-
-
-/******************* 
-import icon and fonts Styles 
-*******************/
-/* @import url(../../assets/vendor_components/font-awesome/css/font-awesome.css);
-@import url(../../assets/vendor_components/Ionicons/css/ionicons.css);
-@import url(../../assets/vendor_components/themify-icons/themify-icons.css);
-@import url(../../assets/vendor_components/linea-icons/linea.css);
-@import url(../../assets/vendor_components/glyphicons/glyphicon.css);
-@import url(../../assets/vendor_components/flag-icon/css/flag-icon.css);
-@import url(../../assets/vendor_components/material-design-iconic-font/css/materialdesignicons.css); */
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 
-/*------------------------------------------------------------------
+.vertical-nav {
+  min-width: 17rem;
+  width: 17rem;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+}
 
-[Typography]
+.page-content {
+  width: calc(100% - 17rem);
+  margin-left: 17rem;
+  transition: all 0.4s;
+}
 
-Body :		Poppins, sans-serif;
--------------------------------------------------------------------*/
+/* for toggle behavior */
+
+#sidebar.active {
+  margin-left: -17rem;
+}
+
+#content.active {
+  width: 100%;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -17rem;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #content {
+    width: 100%;
+    margin: 0;
+  }
+  #content.active {
+    margin-left: 17rem;
+    width: calc(100% - 17rem);
+  }
+}
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSE
+* ==========================================
+*
+*/
+
+body {
+  background: #599fd9;
+  background: -webkit-linear-gradient(to right, #599fd9, #c2e59c);
+  background: linear-gradient(to right, #599fd9, #c2e59c);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.separator {
+  margin: 3rem 0;
+  border-bottom: 1px dashed #fff;
+}
+
+.text-uppercase {
+  letter-spacing: 0.1em;
+}
+
+.text-gray {
+  color: #aaa;
+}
+
 
 /*Body, layout*/
 .layout-boxed body, .layout-boxed html, .wrapper, body, html {
