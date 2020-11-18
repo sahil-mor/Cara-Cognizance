@@ -31,58 +31,53 @@
 <!-- Site wrapper -->
 <div class="wrapper">
   <%- include('./partials/header') %> 
-  
-  <%- include('./partials/sidenav') %> 
-</head>
+  </head>
 <body>
-    <div class="content-wrapper">
-    <section class="content">
-        <div class="row fx-element-overlay">
-          <div class="col-md-12 col-lg-4">
-              <div class="box overflow-hidden">
-                      <div class="fx-card-item">
-                          <div class="fx-card-avatar fx-overlay-1" style="display: flex;flex-direction: column;" > 
-                            <div id="imageHere">
+  <section class="mainsite" id="mainsite">
+	<%- include('./partials/sidenav') %> 
+	<section class="mainpage" id="mainpage">
+	  <div class="burger" id="burger">
+		  <div class="burger-menu"></div>
+	  </div>
+    <div style="height: 100vh;background: #f1f2f7;">
+      <section class="content">
+          <div class="row fx-element-overlay">
+            <div class="col-md-12 col-lg-4">
+                <div class="box overflow-hidden">
+                        <div class="fx-card-item">
+                            <div class="fx-card-avatar fx-overlay-1" style="display: flex;flex-direction: column;" > 
+                              <div id="imageHere">
+                              </div>
                             </div>
-                          </div>
-                      </div>
+                        </div>
 
-                      <div style="margin: 5%;margin-left: 20%;">
-                        <input type="file" id="imageUpload">
-                        <h2 id="pleaseWait" > Please wait .. loading important resources </h2>
-                        <h3 id="canUpload" > Now you can upload image </h3>
-                      </div>
-              </div>
-          </div>
-          <div class="col-md-12 col-lg-6">
-            <div class="box overflow-hidden">
-              <div class="fx-card-item">
-                <div class="fx-card-avatar fx-overlay-1"> 
-                  <h1 class="box-title" id="heading"> Your result will come here </h1>
-                  <div id="addLoader"></div>
-                  <div id="linksHere" style="display: flex;flex-direction: column;">
-                                        
+                        <div style="margin: 5%;margin-left: 20%;">
+                          <input type="file" id="imageUpload">
+                          <h2 id="pleaseWait" > Please wait .. loading important resources </h2>
+                          <h3 id="canUpload" > Now you can upload image </h3>
+                        </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <div class="box overflow-hidden">
+                <div class="fx-card-item">
+                  <div class="fx-card-avatar fx-overlay-1"> 
+                    <h1 class="box-title" id="heading"> Your result will come here </h1>
+                    <div id="addLoader"></div>
+                    <div id="linksHere" style="display: flex;flex-direction: column;">
+                                          
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-         </div>   
+          </div>   
 
+    </section>
+    </div>
   </section>
-  </div>
-  
-       
-    <footer class="main-footer">
-      <div class="pull-right d-none d-sm-inline-block">
-        
-      </div> &copy; 2020 <a href="#">Cara Cognizance</a>. 
-    </footer>
-  
-    <!-- Add the sidebar's background. This div must be placed immediately after the control sidebar -->
-    <div class="control-sidebar-bg"></div>
-  </div>
-  <!-- ./wrapper -->
+  </section> 
+     
       
   <%- include('./partials/footer') %> 
   <% if(imagesLinks){%> 

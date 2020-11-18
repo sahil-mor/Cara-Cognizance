@@ -1,53 +1,43 @@
-  <div class="vertical-nav bg-white" id="sidebar">
-    <div class="ml-10">
-      <div class="py-4 px-3 mb-4 bg-light mt-25">
-       
-      </div>
-      <ul class="nav flex-column bg-white mb-0">
-        <li class="nav-item">
-          <a class="nav-link text-dark font-italic bg-light" href="/index" >
-            <i class="fa fa-laptop"></i>
-            <span style="color: black;"> <%= user.username %> </span>
-          </a>
+  <nav class="sidenav">
+		<div class="menu">
+      <h4 style="color: white;"> Cara Cognizance </h4>
+			<ul class="menu-list" style="margin-top: 20%;">
+        <li class="menu-item">
+          <a href="/index"  class="menu-link">
+            <%= user.username %> 
+        </a>
         </li>
+
         <% if(!user.isAuthorised){ %> 
-          <li class="nav-item">
-            <a class="nav-link text-dark font-italic bg-light" href="/editMember-<%=user.userItem%>" >
-
-              <i class="fa fa-pencil"></i>
-              <span style="color: black;">Edit Profile</span>
-            </a>
+          <li class="menu-item">
+            <a href="/editMember-<%=user.userItem%>"  class="menu-link">
+              Edit Profile
+          </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark font-italic bg-light" href="/addMember" >
-
-              <i class="fa fa-plus-circle"></i>
-              <span style="color: black;">Add Member</span>
-            </a>
+          <li class="menu-item">
+            <a href="/addMember"  class="menu-link">
+              Add Member
+          </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark font-italic bg-light" href="/searchedUsers" >
-
-              <i class="fa fa-eye" aria-hidden="true"></i>
-              <span style="color: black;">Searched Users</span>
-            </a>
+          <li class="menu-item">
+            <a href="/searchedUsers"  class="menu-link">
+              Searched Users
+          </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark font-italic bg-light" href="/searchItem" >
-
-              <i class="fa fa-search" aria-hidden="true"></i>
-              <span style="color: black;">Search</span>
-            </a>
+          <li class="menu-item">
+            <a href="/searchItem"  class="menu-link">
+              Search
+          </a>
           </li>
         <% } %>
-       
-        <li class="nav-item">
-          <a class="nav-link text-dark font-italic bg-light" href="/logout">
-            <i class="fa fa-sign-out"></i>
-            <span style="color: black;">Logout</span>
-          </a>
+        <li class="menu-item">
+          <a href="/logout"  class="menu-link">
+            Logout
+        </a>
         </li>
-      </ul>
-    
-    </div>
-  </div>
+           <a href="#" style="color: white;font-weight: bold;">&copy; 2020 Cara Cognizance</a>. 
+        
+        
+			</ul>
+		</div>
+	</nav>
