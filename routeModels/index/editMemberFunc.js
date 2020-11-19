@@ -6,6 +6,7 @@ const uuid = require("uuid")
 const User = require("../user/User")
 const UserItem = require("../userItem/UserItem")
 const ImageLink = require("../imagesLink/imageLink")
+const { deleteModel } = require("mongoose")
 
 
 const storage = multer.diskStorage({
@@ -33,9 +34,10 @@ const addMemberFunc = async (req,res) => {
         }
         try{
             if(req.file){
-                if( user.image.cloudinary_id != "ppupkcvzznejm0c6tylm" ){
-                    console.log("i m here")
-                    var deleted = await cloudinary.uploader.destroy(user.image.cloudinary_id);
+                if( userItem.image.cloudinary_id != "ppupkcvzznejm0c6tylm" ){
+                    var deleted = await cloudinary.uploader.destroy(userItem.image.cloudinary_id);
+                }else{
+                    console.log("no need to delete")
                 }
                 const result = await cloudinary.uploader.upload(req.file.path);
                 const imageUrl = result.secure_url

@@ -55,8 +55,8 @@ const addMemberFunc = async (req,res) => {
             user.familyMembers.unshift(newUserItem)
             const savedUser = await user.save()
             const updatedUser = await User.findByIdAndUpdate(req.user.id,savedUser )
-            req.flash("success","Data added successfully !!!")
-            res.redirect("/index")
+            req.flash("success","Image added successfully, enter other fields as well !!!")
+            res.redirect(`/editMember-${newUserItem.id}`)
         }
         catch(err){
             console.log(err)
