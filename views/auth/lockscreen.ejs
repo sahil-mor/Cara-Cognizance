@@ -4,22 +4,25 @@ background-repeat: no-repeat;
 background-size: cover;">
 	<div class="container h-p100">
 		<div class="row align-items-center justify-content-md-center h-p100">
-			<div class="col-lg-4 col-md-8 col-12">
+			<div class="col-lg-6 col-md-8 col-12">
 				<div class="lockscreen-wrapper bg-img rounded" style="background-image:url(/images/img1.jpg);" data-overlay="5">	
 				  <div class="lockscreen-box-body">
 
 				  <div class="lockscreen-item">
 					<div class="lockscreen-image" style="margin-top: -80px;">
-					  <img src="<%=user.image.imageUrl%>" style="border-radius: 50%;border : 2px solid white ;" alt="User Image">
+					  <img src="<%=user.image.imageUrl%>" style="border-radius: 50%;border : 2px solid white ;margin-left: 38%;" alt="User Image">
 					</div>
 					
 					<div class="lockscreen-name margin-top-20"><h3> <%= user.username %> </h3></div>
 					<% var formUrl = `/resetPassword-${otp.id}` %>
+					<% var message = 'Enter OTP to reset your password' %>
 					<% if(forRegister){ %> 
 						<% formUrl = `/verifyOtp-${otp.id}` %>
+						<% message = 'Enter OTP to verify your account' %>
 					<% } %>
 					<% if(forAuthorised){ %> 
 						<% formUrl = `/authorised/verifyOtp-${otp.id}` %>
+						<% message = 'Enter OTP to verify your account' %>
 					<% } %>
 					<form action="<%=formUrl%>" method="POST" class="lockscreen-credentials margin-top-20 form-element text-white">					  
 					  <div class="form-group has-feedback">
@@ -34,7 +37,7 @@ background-size: cover;">
 
 				  </div>
 				  <div class="help-block text-center margin-top-20">
-					Enter OTP to reset your password
+						<%=message%>
 				  </div>
 				  <div class="text-center">
 					Or <a href="/" class="text-danger"><b>Sign In</b></a> as a Different User
