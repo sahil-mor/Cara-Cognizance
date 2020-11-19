@@ -40,12 +40,17 @@ router.get("/index",middleware.isLoggedIn,indexRoute)
 
 router.get("/logout", (req,res) => { 
     var redirectTo = '/'
-    if(req.user.isAuthorised){
-        redirectTo = '/authorised'
-    }
-    req.logout();
-    req.flash("success","SUCCESSFULLY LOGGED YOU OUT")
-    res.redirect(`${redirectTo}`)
+    if(req.user){
+        if(req.user.isAuthorised){
+            redirectTo = '/authorised'
+        }
+        req.logout();
+        req.flash("success","SUCCESSFULLY LOGGED YOU OUT")
+        res.redirect(`${redirectTo}`)
+    }else{
+        req.flash("error","NO USER IS LOGGED IN")
+        res.redirect('/')
+    }    
 })
 
 
