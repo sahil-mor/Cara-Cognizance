@@ -26,19 +26,7 @@ background-size: cover;">
 						<input type="text" class="form-control text-white" name="enteredOtp" placeholder="Enter OTP Here">
 						<span class="ion ion-locked form-control-feedback text-white"></span>
 					  </div>
-						<div class="text-center">
-						  <% if(error && error.length > 0){ %>
-							<div class="alert alert-danger">
-								<%= error %> 
-							</div>
-						  <% } %>
-					  
-						  <% if(success && success.length > 0){ %>
-							<div class="alert alert-success">
-								<%= success %>
-							</div>
-						  <% } %>
-						</div>
+					  <%- include('../partials/flashMessage') %> 
 						<div class="text-center">
 						  <button type="submit" class="btn btn-info btn-block margin-top-10">SUBMIT</button>
 						</div>

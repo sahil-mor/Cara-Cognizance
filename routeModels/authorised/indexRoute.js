@@ -7,12 +7,17 @@ indexRoute = (req,res) => {
         if(err){
             console.log(err)
             req.flash("error","Unexpected Error Occured!!!")
-            res.redirect("/authorised/login")
+            res.redirect("/authorised")
         }else{
-            var imagesLinks = await ImageLink.find({})
+            if(user.isAuthorised){
+                var imagesLinks = await ImageLink.find({})
     
-            res.render("searchItem",{ title : "Home",user, imagesLinks  })
-            
+                res.render("searchItem",{ title : "Home",user, imagesLinks  })
+            }else{
+                req.logout();
+                req.flash("error","USERNAME OR PASSWORD IS WRONG")
+                res.redirect("/authorised")
+            }            
         }
     })
 }

@@ -2,7 +2,6 @@
 <body class="hold-transition skin-purple light-sidebar sidebar-mini">
 
 <div class="wrapper">
-  <%- include('../partials/header') %> 
   
   <section class="mainsite" id="mainsite">
 	<%- include('../partials/sidenav') %> 
@@ -11,11 +10,12 @@
 		  <div class="burger-menu"></div>
 	  </div>
 	<div style="height: 100vh;background: #f1f2f7;">
-    <section class="content-header">
-      <h1>
-        Searched Users
-      </h1>
-    </section>
+		<%- include('../partials/flashMessage') %> 
+		<section class="content-header">
+		<h1>
+			Searched Users
+		</h1>
+		</section>
 
     <section class="content">
 		<div class="row">
