@@ -1,5 +1,6 @@
 var User = require("../user/User")
 var ImageLink = require("../imagesLink/imageLink")
+const imageLink = require("../imagesLink/imageLink")
 
 
 const searchItem = async (req,res) => {
@@ -10,11 +11,13 @@ const searchItem = async (req,res) => {
                 req.flash("error","First you need to upload your image !!!")
                 res.redirect("/index")
             }else{
-                var imagesLinks = await ImageLink.find({})
+                var imagesLinks = await ImageLink.find({ imageUrl : { $ne : "https://res.cloudinary.com/dl3mvgfqz/image/upload/v1605605730/ppupkcvzznejm0c6tylm.png" } })
+                
                 res.render("searchItem",{ title : "Search",user, imagesLinks })
             }
         }else{
-            var imagesLinks = await ImageLink.find({})
+            var imagesLinks = await ImageLink.find({ imageUrl : { $ne : "https://res.cloudinary.com/dl3mvgfqz/image/upload/v1605605730/ppupkcvzznejm0c6tylm.png" } })
+            
             res.render("searchItem",{ title : "Search",user, imagesLinks })
         }
 
