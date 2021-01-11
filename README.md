@@ -6,7 +6,7 @@ name , contact number etc.
 <br />
 
 # Video
- <a href=""> Demo Video </a>
+ <a target="_blank" href=""> Demo Video </a>
 
 <br />
 
@@ -174,13 +174,13 @@ Visit http://localhost:3000  <br />
 
 # Built With 
 NodeJS - Express <br />
-Database - <a href="https://mongoosejs.com/"> Mongoose </a>  <br />
-Face Detection - <a href="https://justadudewhohacks.github.io/face-api.js/docs/index.html"> Module </a>
+Database - <a target="_blank" href="https://mongoosejs.com/"> Mongoose </a>  <br />
+Face Detection - <a target="_blank" href="https://justadudewhohacks.github.io/face-api.js/docs/index.html"> Module </a>
 
 
 <br />
 
 # Author
-Diagrams by <a href="https://www.instagram.com/chandrapr_s/?igshid=kjqosdkrsmi8"> Chandraprakash </a> <br />
-Development by <a href="https://sahilmor.herokuapp.com/" > Sahil Mor </a> 
+Diagrams by <a target="_blank" href="https://www.instagram.com/chandrapr_s/?igshid=kjqosdkrsmi8"> Chandraprakash </a> <br />
+Development by <a target="_blank" href="https://sahilmor.herokuapp.com/" > Sahil Mor </a> 
 
