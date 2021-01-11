@@ -40,6 +40,102 @@ Visit http://localhost:3000  <br />
 
 <br />
 
+## Update Information 
+<table>
+  <tr>
+    <td align="center"><img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/addFamilyMember.png" width="400px;"alt=""/></td>
+    <td align="right"><img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/editInformation.png" width="400px;"alt=""/><br />      </td>
+  </tr>
+  </table>
+
+<br />
+
+## Search User 
+<table>
+  <tr>
+    <td align="center"><img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/searchUser.png" width="400px;"alt=""/></td>
+    <td align="right"><img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/foundUser.png" width="400px;"alt=""/><br />      </td>
+    <td align="right"><img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/adminSearch.png" width="400px;"alt=""/><br />      </td>
+    
+  </tr>
+  </table>
+
+<br />
+
+
+## Searched User Info To Authorised and Family
+<table>
+  <tr>
+    <td align="center"><img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/userInfoToAuthorised.png"  ></td>
+  </tr>
+  </table>
+<br />
+
+## Searched User Info To Unknown
+<table>
+  <tr>
+    <td align="center"><img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/searchedUserToUnknown.png"  ></td>
+  </tr>
+  </table>
+<br />
+
+## Data Flow Diagrams
+<table>
+  <tr>
+    <td align="center">    
+<h3> Level 0 </h3>
+<img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/diagrams/level%200.png" width="400px;"  ></td>
+
+<td align="center">    
+<h3> Level 1 </h3>
+<img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/diagrams/level%201.jpeg" width="400px;"  ></td>
+
+<td align="center">    
+<h3> Level 2 </h3>
+<img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/diagrams/level%202.jpeg" width="400px;"  ></td>
+  </tr>
+  </table>
+<br />
+
+## ER Diagram
+<table>
+  <tr>
+    <td align="center"><img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/diagrams/er.jpeg"  ></td>
+  </tr>
+  </table>
+
+<br />
+
+## USE CASE Diagram
+<table>
+  <tr>
+    <td align="center"><img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/diagrams/use%20case.png"  ></td>
+  </tr>
+  </table>
+
+<br />
+
+## Forgot Password 
+<table>
+  <tr> 
+   <td align="center"><img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/recoverPassword.png" width="400px;"alt=""/></td>
+    <td align="center"><img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/changePasswordOtp.png" width="400px;"alt=""/></td>
+    <td align="right"><img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/changePasswordOtp2.png" width="400px;"alt=""/><br />      </td>
+  </tr>
+  </table>
+
+<br />
+
+## Page Not Found
+<table>
+  <tr>
+    <td align="center"><img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/pageNotFound.png"  ></td>
+  </tr>
+  </table>
+
+<br />
+
+
 
 # TechStack
 <table>
