@@ -6,7 +6,7 @@ name , contact number etc.
 <br />
 
 # Video
- <a target="_blank" href=""> Demo Video </a>
+ <a target="_blank" href="https://drive.google.com/file/d/1duBujWSzBUE4T4VOnR2_K5m04y4Foo5U/view?usp=sharing"> Demo Video </a>
 
 <br />
 
@@ -72,7 +72,7 @@ name , contact number etc.
     </tr>
     <tr>
     <td align="center">
-        <h3> Multiple Images </h3>
+        <h3> Multiple Users </h3>
         <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/adminSearch.png" alt=""/><br/>      
    </td>
     
