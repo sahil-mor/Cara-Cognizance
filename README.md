@@ -10,13 +10,6 @@ name , contact number etc.
 
 <br />
 
-# Getting Started
-Clone this repository.<br />
-Run npm install to download modules.<br />
-Make sure to add .env file and all credentails there. <br />
-Run npm start.<br />
-Visit http://localhost:3000  <br />
-
 <br />
 
 
@@ -24,8 +17,12 @@ Visit http://localhost:3000  <br />
 ## Authentication
 <table>
   <tr>
-    <td align="center"><img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/signinUser.png" width="400px;"alt=""/></td>
-    <td align="right"><img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/signupUser.png" width="400px;"alt=""/><br />      </td>
+    <td align="center">
+   <h3> Sign In </h3>
+   <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/signinUser.png" width="400px;"alt=""/></td>
+    <td align="right">
+   <h3> Registration </h3>
+   <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/signupUser.png" width="400px;"alt=""/><br />      </td>
   </tr>
   </table>
 
@@ -43,8 +40,12 @@ Visit http://localhost:3000  <br />
 ## Update Information 
 <table>
   <tr>
-    <td align="center"><img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/addFamilyMember.png" width="400px;"alt=""/></td>
-    <td align="right"><img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/editInformation.png" width="400px;"alt=""/><br />      </td>
+    <td align="center">
+   <h3> Add Family Member </h3>
+   <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/addFamilyMember.png" width="400px;"alt=""/></td>
+    <td align="right">
+   <h3> Edit Information </h3>
+   <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/editInformation.png" width="400px;"alt=""/><br />      </td>
   </tr>
   </table>
 
@@ -53,9 +54,17 @@ Visit http://localhost:3000  <br />
 ## Search User 
 <table>
   <tr>
-    <td align="center"><img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/searchUser.png" width="400px;"alt=""/></td>
-    <td align="right"><img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/foundUser.png" width="400px;"alt=""/><br />      </td>
-    <td align="right"><img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/adminSearch.png" width="400px;"alt=""/><br />      </td>
+    <td align="center">
+        <h3> Upload Image </h3>
+        <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/searchUser.png" width="400px;"alt=""/></td>
+    <td align="right">
+        <h3> One User </h3>
+        <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/foundUser.png" width="400px;"alt=""/><br />     
+    </td>
+    <td align="right">
+        <h3> Multiple Images </h3>
+        <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/adminSearch.png" width="400px;"alt=""/><br/>      
+   </td>
     
   </tr>
   </table>
@@ -118,9 +127,15 @@ Visit http://localhost:3000  <br />
 ## Forgot Password 
 <table>
   <tr> 
-   <td align="center"><img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/recoverPassword.png" width="400px;"alt=""/></td>
-    <td align="center"><img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/changePasswordOtp.png" width="400px;"alt=""/></td>
-    <td align="right"><img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/changePasswordOtp2.png" width="400px;"alt=""/><br />      </td>
+   <td align="center">
+   <h3> Enter Email </h3>
+   <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/recoverPassword.png" width="400px;"alt=""/></td>
+    <td align="center">
+   <h3> Verify OTP </h3>
+   <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/changePasswordOtp.png" width="400px;"alt=""/></td>
+    <td align="right">
+   <h3> Enter New Password </h3>
+   <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/changePasswordOtp2.png" width="400px;"alt=""/><br />      </td>
   </tr>
   </table>
 
@@ -147,6 +162,15 @@ Visit http://localhost:3000  <br />
   </table>
 
 <br />
+
+
+# Getting Started
+Clone this repository.<br />
+Run npm install to download modules.<br />
+Make sure to add .env file and all credentails there. <br />
+Run npm start.<br />
+Visit http://localhost:3000  <br />
+
 
 # Built With 
 NodeJS - Express <br />
