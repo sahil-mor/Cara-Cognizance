@@ -72,7 +72,7 @@ name , contact number etc.
     </tr>
     <tr>
     <td align="center">
-        <h3> Multiple Images </h3>
+        <h3> Multiple Users </h3>
         <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/adminSearch.png" alt=""/><br/>      
    </td>
     
