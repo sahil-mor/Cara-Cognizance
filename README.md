@@ -21,7 +21,10 @@ name , contact number etc.
    <h3> Sign In </h3>
    <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/signinUser.png" width="400px;"alt=""/></td>
     <td align="center">
-   <h3> Registration </h3>
+   
+  </tr>
+  <tr>
+  <h3> Registration </h3>
    <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/signupUser.png" width="400px;"alt=""/><br />      </td>
   </tr>
   </table>
