@@ -43,7 +43,7 @@ name , contact number etc.
     <td align="center">
    <h3> Add Family Member </h3>
    <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/addFamilyMember.png" width="400px;"alt=""/></td>
-    <td align="right">
+    <td align="center">
    <h3> Edit Information </h3>
    <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/editInformation.png" width="400px;"alt=""/><br />      </td>
   </tr>
@@ -57,11 +57,11 @@ name , contact number etc.
     <td align="center">
         <h3> Upload Image </h3>
         <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/searchUser.png" width="400px;"alt=""/></td>
-    <td align="right">
+    <td align="center">
         <h3> One User </h3>
         <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/foundUser.png" width="400px;"alt=""/><br />     
     </td>
-    <td align="right">
+    <td align="center">
         <h3> Multiple Images </h3>
         <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/adminSearch.png" width="400px;"alt=""/><br/>      
    </td>
@@ -133,7 +133,7 @@ name , contact number etc.
     <td align="center">
    <h3> Verify OTP </h3>
    <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/changePasswordOtp.png" width="400px;"alt=""/></td>
-    <td align="right">
+    <td align="center">
    <h3> Enter New Password </h3>
    <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/changePasswordOtp2.png" width="400px;"alt=""/><br />      </td>
   </tr>
