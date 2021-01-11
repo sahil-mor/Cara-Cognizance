@@ -19,13 +19,13 @@ name , contact number etc.
   <tr>
     <td align="center">
    <h3> Sign In </h3>
-   <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/signinUser.png" alt=""/></td>
+   <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/signinUser.png" /></td>
     <td align="center">
    
   </tr>
   <tr>
   <h3> Registration </h3>
-   <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/signupUser.png" alt=""/><br />      </td>
+   <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/signupUser.png" /><br />      </td>
   </tr>
   </table>
 
@@ -97,11 +97,13 @@ name , contact number etc.
     <td align="center">    
 <h3> Level 0 </h3>
 <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/diagrams/level%200.png" width="400px;"  ></td>
-
+</tr> 
+<tr>
 <td align="center">    
 <h3> Level 1 </h3>
 <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/diagrams/level%201.jpeg" width="400px;"  ></td>
-
+</tr> 
+<tr>
 <td align="center">    
 <h3> Level 2 </h3>
 <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/diagrams/level%202.jpeg" width="400px;"  ></td>
