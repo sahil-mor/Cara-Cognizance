@@ -96,17 +96,17 @@ name , contact number etc.
   <tr>
     <td align="center">    
 <h3> Level 0 </h3>
-<img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/diagrams/level%200.png" width="400px;"  ></td>
+<img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/diagrams/level%200.png" ></td>
 </tr> 
 <tr>
 <td align="center">    
 <h3> Level 1 </h3>
-<img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/diagrams/level%201.jpeg" width="400px;"  ></td>
+<img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/diagrams/level%201.jpeg" ></td>
 </tr> 
 <tr>
 <td align="center">    
 <h3> Level 2 </h3>
-<img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/diagrams/level%202.jpeg" width="400px;"  ></td>
+<img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/diagrams/level%202.jpeg" ></td>
   </tr>
   </table>
 <br />
