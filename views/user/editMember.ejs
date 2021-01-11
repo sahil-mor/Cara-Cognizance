@@ -20,31 +20,18 @@
 				<div class="col-12">     
 					<div class="box box-default">
 						<div class="box-body">
-							<form enctype="multipart/form-data" action="/editMember-<%=userItem.id%>" method="POST" >						
+							<form action="/editMember-<%=userItem.id%>" method="POST" enctype="multipart/form-data" >						
 								<div id="example-basic">
-									<h3>Edit Info</h3>
+									<h3>Edit Information</h3>
 									<section>
 										<div class="row">
 											<div class="col-md-12">
 												<div class="from-group">
 													<label>Select Image</label>
-													<input type="file" value="<%=userItem.image.imageUrl%>" required name="uri" accept="image/x-png,image/gif,image/jpeg" class="form-group form-control">
+													<input type="file" id="file" onchange="Filevalidation()" value="<%=userItem.image.imageUrl%>" name="uri" accept="image/x-png,image/gif,image/jpeg" class="form-group form-control">
 												</div>
 											</div>
-										</div>
-										<div class="row">
-											<div class="col-md-12">
-												<div class="form-group">
-													<button type="submit" class="form-group btn btn-dark">Submit</button>
-												</div>
-											</div>
-										</div>
-									</section>
-								</div>
-							</form>
-							<form  action="/editMember-<%=userItem.id%>" method="POST" >
-								<div id="example-basic">
-									<section>         
+										</div>        
 										<div class="row">
 											<div class="col-md-6">
 												<div class="form-group">
@@ -104,6 +91,33 @@
 </div>
 	
   <%- include('../partials/footer') %> 
+
+  <script>
+	const Filevalidation = () => { 
+        const fi = document.getElementById('file'); 
+        // Check if any file is selected. 
+        if (fi.files.length > 0) { 
+            for (var i = 0; i <= fi.files.length - 1; i++) { 
+  
+                const fsize = fi.files.item(i).size; 
+                const file = Math.round((fsize / 1024)); 
+                // The size of the file. 
+                if (file >= 5120) { 
+                    alert( 
+                      "File too Big, please select a file less than 5mb"); 
+                } else if (file < 512) { 
+                    alert( 
+                      "File too small, please select a file greater than 512kb"); 
+                } else { 
+					console.log("size : " + file + " KB")
+                    // document.getElementById('size').innerHTML = '<b>'
+                    // + file + '</b> KB'; 
+                } 
+            } 
+        } 
+	} 
+	</script>
+
 </body>
 
 </html>

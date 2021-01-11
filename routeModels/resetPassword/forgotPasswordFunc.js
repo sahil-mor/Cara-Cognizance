@@ -2,6 +2,7 @@ const User = require("../user/User")
 const OTP = require("../OTP/OTP")
 
 const nodemailer = require('nodemailer');
+const { use } = require("passport");
 
 const user = process.env.EMAIL_ID 
 const pass = process.env.PASSWORD
@@ -40,7 +41,7 @@ const forgotPasswordFunc = async (req,res) => {
             to : email,
             subject: 'Cara Cognizance | Reset Password',
             text: "Hi," + "\n\n" + 
-            "To reset your password at Cara Cognizance, please use the OTP given below.This OTP is only valid for 60 minutes."
+            "To reset your password at Cara Cognizance for username " + user.username + ", please use the OTP given below.This OTP is only valid for 60 minutes."
             + "\n\n" + 
             "OTP : " + otp + " \n\n" + 
             "Regards,\n" +

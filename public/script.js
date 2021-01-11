@@ -42,15 +42,17 @@ async function start() {
       const box = resizedDetections[i].detection.box
       var indexOf = result.toString().indexOf(':')
       var name = result.toString().slice(0,indexOf)
-      var id = result.toString().slice(indexOf+1,indexOf+25)
-      console.log(name.toString() + " is the name with id : " + id.toString())
-      const drawBox = new faceapi.draw.DrawBox(box, { label: name  })
-      drawBox.draw(canvas)
-      if(!name.includes("unknown") ){
-        linksHere.prepend(`<h3> <a href='/viewItem-${id.toString()}'> <i class='fa fa-eye' ></i> ${name.toString()} </a> </h3>`)
-      }else{
-        linksHere.append(`<h3> <a href='#'> <i class='fa fa-eye'loader ></i> Unknown </a> </h3>`)
-      }      
+      if(name != 'notfoundss'){
+        var id = result.toString().slice(indexOf+1,indexOf+25)
+        console.log(name.toString() + " is the name with id : " + id.toString())
+        const drawBox = new faceapi.draw.DrawBox(box, { label: name  })
+        drawBox.draw(canvas)
+        if(!name.includes("unknown") ){
+          linksHere.prepend(`<h3> <a href='/viewItem-${id.toString()}'> <i class='fa fa-eye' ></i> ${name.toString()} </a> </h3>`)
+        }else{
+          linksHere.append(`<h3> <a href='#'> <i class='fa fa-eye'loader ></i> Unknown </a> </h3>`)
+        }  
+      }
     })
 
   })
@@ -60,12 +62,23 @@ function loadLabeledImages() {
   const labels = links
   return Promise.all(
     labels.map(async label => {
-      const descriptions = []
+      try{
+        const descriptions = []
         var img = await faceapi.fetchImage(label.imageUrl)
         const detections = await faceapi.detectSingleFace(img).withFaceLandmarks().withFaceDescriptor()
-        descriptions.push(detections.descriptor)
-        var nameAndId = label.name.toString() + ":" + label.userItem.toString()
-      return new faceapi.LabeledFaceDescriptors(nameAndId, descriptions)
+        if(detections == undefined){
+          // return new faceapi.LabeledFaceDescriptors("notfoundss:notfound", descriptions)
+        }else{
+          descriptions.push(detections.descriptor)
+          console.log(label)
+          var nameAndId = label.name.toString() + ":" + label.userItem.toString()
+          return new faceapi.LabeledFaceDescriptors(nameAndId, descriptions)
+        }
+      }catch(err){
+        console.log("caught")
+        console.log(err)
+      }
+      
     })
   )
 

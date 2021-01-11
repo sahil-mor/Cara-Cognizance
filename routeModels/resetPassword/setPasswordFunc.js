@@ -6,7 +6,6 @@ const setPassword = async (req,res) => {
     try{
         var user = await User.findById(userID)
 
-
         await user.setPassword(password)
 
         var savedUser = await user.save()
