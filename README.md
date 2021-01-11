@@ -20,6 +20,38 @@ Visit http://localhost:3000  <br />
 <br />
 
 
+# Screenshots
+## Authentication
+<table>
+  <tr>
+    <td align="center"><img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/signinUser.png" width="400px;"alt=""/></td>
+    <td align="right"><img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/signupUser.png" width="400px;"alt=""/><br />      </td>
+  </tr>
+  </table>
+
+<br />
+
+## User Dashboard
+<table>
+  <tr>
+    <td align="center"><img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/homeUser.png"  ></td>
+  </tr>
+  </table>
+
+<br />
+
+
+# TechStack
+<table>
+  <tr>
+    <td><img src="https://github.com/sahil-mor/RyZit/blob/master/public/assets/img/theme/node.jpg" width="100px" height="100px" /></td>
+    <td><img src="https://github.com/sahil-mor/RyZit/blob/master/public/assets/img/theme/mongoose.png" width="100px" height="100px" /></td>
+    <td><img src="https://github.com/sahil-mor/RyZit/blob/master/public/assets/img/theme/bootstrap.jpg"  width="100px" height="100px"></td>
+  </tr>
+  </table>
+
+<br />
+
 # Built With 
 NodeJS - Express <br />
 Database - <a href="https://mongoosejs.com/"> Mongoose </a>  <br />
@@ -29,6 +61,6 @@ Face Detection - <a href="https://justadudewhohacks.github.io/face-api.js/docs/i
 <br />
 
 # Author
-Diagrams by <a href="https://www.instagram.com/chandrapr_s/?igshid=kjqosdkrsmi8"> Chandraprakash </a>
+Diagrams by <a href="https://www.instagram.com/chandrapr_s/?igshid=kjqosdkrsmi8"> Chandraprakash </a> <br />
 Development by <a href="https://sahilmor.herokuapp.com/" > Sahil Mor </a> 
 
