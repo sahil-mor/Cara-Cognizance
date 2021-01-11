@@ -46,12 +46,12 @@ name , contact number etc.
   <tr>
     <td align="center">
    <h3> Add Family Member </h3>
-   <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/addFamilyMember.png" width="400px;"alt=""/></td>
+   <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/addFamilyMember.png" alt=""/></td>
     </tr>
     <tr>
     <td align="center">
    <h3> Edit Information </h3>
-   <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/editInformation.png" width="400px;"alt=""/><br />      </td>
+   <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/editInformation.png" alt=""/><br />      </td>
   </tr>
   </table>
 
@@ -62,18 +62,18 @@ name , contact number etc.
   <tr>
     <td align="center">
         <h3> Upload Image </h3>
-        <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/searchUser.png" width="400px;"alt=""/></td>
+        <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/searchUser.png" alt=""/></td>
         </tr>
         <tr>
     <td align="center">
         <h3> One User </h3>
-        <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/foundUser.png" width="400px;"alt=""/><br />     
+        <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/foundUser.png" alt=""/><br />     
     </td>
     </tr>
     <tr>
     <td align="center">
         <h3> Multiple Images </h3>
-        <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/adminSearch.png" width="400px;"alt=""/><br/>      
+        <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/adminSearch.png" alt=""/><br/>      
    </td>
     
   </tr>
@@ -141,17 +141,17 @@ name , contact number etc.
   <tr> 
    <td align="center">
    <h3> Enter Email </h3>
-   <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/recoverPassword.png" width="400px;"alt=""/></td>
+   <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/recoverPassword.png" alt=""/></td>
     </tr>
     <tr>
     <td align="center">
    <h3> Verify OTP </h3>
-   <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/changePasswordOtp.png" width="400px;"alt=""/></td>
+   <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/changePasswordOtp.png" alt=""/></td>
     </tr>
     <tr>
     <td align="center">
    <h3> Enter New Password </h3>
-   <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/changePasswordOtp2.png" width="400px;"alt=""/><br />      </td>
+   <img src="https://github.com/sahil-mor/Cara-Cognizance/blob/master/Screenshots/changePasswordOtp2.png" alt=""/><br />      </td>
   </tr>
   </table>
 
