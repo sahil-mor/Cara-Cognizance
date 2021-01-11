@@ -5,6 +5,8 @@ const bodyParser = require("body-parser")
 var passport = require("passport")
 var LocalStratergy = require("passport-local")
 const path = require("path")
+const multer = require("multer")
+const uuid = require("uuid")
 const dotenv = require("dotenv")
 dotenv.config()
 
@@ -22,10 +24,37 @@ app.use(bodyParser.urlencoded({ extended : true }))
 app.use(bodyParser.json());
 app.set("view engine","ejs")
 
+const fileStorage = multer.diskStorage({
+    destination : "uploads/",
+    filename : function(req,file,cb){
+        cb(null,file.fieldname + "-" + uuid.v4() + path.extname(file.originalname));
+    }
+})
+
+const fileFilter = (req, file, cb) => {
+    if (
+      file.mimetype === 'image/png' ||
+      file.mimetype === 'image/jpg' ||
+      file.mimetype === 'image/JPG' ||
+      file.mimetype === 'image/jpeg'
+    ) {
+      cb(null, true);
+    } else {
+      cb(null, false);
+    }
+  };
+  
+
+app.use(
+    multer({ storage: fileStorage, fileFilter: fileFilter }).single('uri')
+);
+
+const middleware = require("./middleware")
 const authRoutes = require("./routes/auth")
 const indexRoutes = require("./routes/index")
 const resetPasswordRoutes = require("./routes/resetPassword")
 const authorisedRoutes = require("./routes/authorised")
+const indexRouteAuthorised = require("./routeModels/authorised/indexRoute")
 
 app.use(require("express-session")({
     resave : false, saveUninitialized : false , secret : "This is cara"
@@ -49,7 +78,7 @@ passport.deserializeUser(User.deserializeUser())
 app.get("/", async (req,res) => {
     if(req.user){
         if(req.user.isAuthorised){
-            res.redirect("/authorised/index")
+            res.redirect("/authorised-index")
         }else{
             res.redirect("/index")
         }
@@ -61,6 +90,9 @@ app.get("/", async (req,res) => {
 app.use(authRoutes)
 app.use(indexRoutes)
 app.use(resetPasswordRoutes)
+
+app.get("/authorised-index",middleware.isLoggedIn,indexRouteAuthorised)
+
 app.use("/authorised/", authorisedRoutes)
 
 app.get("/resetPassword",(req,res) => {
@@ -73,6 +105,9 @@ app.get("/sessionExpired",function(req,res){
     res.redirect("/")
 })
 
+app.get("/*",(req,res) => {
+    res.render("404error")
+} )
 
 const port = process.env.PORT || 3000
 

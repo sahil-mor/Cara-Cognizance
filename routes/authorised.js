@@ -18,7 +18,7 @@ router.get("/",(req,res) => {
 router.post("/login",passport.authenticate("local",{
     failureRedirect : "/wrongCredentials"
 }),middleware.isLoggedIn,function(req,res){
-    res.redirect("/authorised/index")
+    res.redirect("/authorised-index")
 })
 
 router.get("/register",(req,res) => {
@@ -40,7 +40,6 @@ router.get("/sessionExpired",function(req,res){
     res.redirect("/authorised")
 })
 
-router.get("/index",middleware.isLoggedIn,indexRoute)
 
 router.get("/logout",function(req,res){
     if(req.user){

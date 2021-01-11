@@ -10,7 +10,7 @@ indexRoute = (req,res) => {
             res.redirect("/")
         }else{
             if(user.isAuthorised){
-                res.redirect("/authorised/index")
+                res.redirect("/authorised-index")
             }else{
                 res.render("user/home",{ user : user, title : "Home" })
             }
