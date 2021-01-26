@@ -10,8 +10,6 @@ name , contact number etc.
 
 <br />
 
-<br />
-
 
 # Screenshots
 ## Authentication
