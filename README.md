@@ -2,7 +2,7 @@
 The goal is to design a software which reduces the abduction of children to a minimal
 extent and help the parents to find their lost child.In this authorised user(police) will use software to
 scan the faces of children(or any lost person) and will be able to access its parents(family) information like their
-name , contact number etc.
+name , contact number, address etc.
 <br />
 
 # Video
